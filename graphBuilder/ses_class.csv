@@ -1,0 +1,61 @@
+Name,Description,Parent
+SES,Social Ecological System,
+RS,Resource System,SES
+RS1,"Sector (e.g., water, forests, pasture, fish)",RS
+RS2,Clarity of system boundaries,RS
+RS3,Size of resource system,RS
+RS4,Human-constructed facilities,RS
+RS5,Productivity of system,RS
+RS6,Equilibrium properties,RS
+RS7,Predictability of system dynamics,RS
+RS8,Storage characteristics,RS
+RS9,Location,RS
+GS,Governance System,SES
+GS1,Government organizations,GS
+GS2,Non-government organizations,GS
+GS3,Network structure,GS
+GS4,Property-rights systems,GS
+GS5,Operational rules,GS
+GS6,Collective-choice rules,GS
+GS7,Constitutional rules,GS
+GS8,Monitoring & sanctioning processes,GS
+RU,Resource Units,SES
+RU1,Resource unit mobility,RU
+RU2,Growth or replacement rate,RU
+RU3,Interaction among resource units,RU
+RU3,Economic value,RU
+RU4,Size,RU
+RU5,Distinctive markings,RU
+RU6,Spatial & temporal distribution,RU
+U,Users,SES
+U1,Number of users,U
+U2,Socioeconomic attributes of users,U
+U3,History of use,U
+U4,Location,U
+U5,Leadership/entrepreneurship,U
+U6,Norms/social capital,U
+U7,Knowledge of SES/mental models,U
+U8,Dependence on resource,U
+U9,Technology used,U
+S,"Social, Economic, and Political Settings",SES
+S1,Economic development.,S
+S2,Demographic trends.,S
+S3,Political stability.,S
+S4,Government settlement policies.,S
+S5,Market incentives.,S
+S6,Media organization.,S
+I,Interactions,SES
+I1,Harvesting levels of diverse users,I
+I2,Information sharing among users,I
+I3,Deliberation processes,I
+I4,Conflicts among users,I
+I5,Investment activities,I
+I6,Lobbying activities,I
+O,Outcomes,SES
+O1,"Social performance measures (e.g., efficiency, equity, accountability)",O
+O2,"Ecological performance measures (e.g., overharvested, resilience, diversity)",O
+O3,Externalities to other SESs,O
+ECO,Related Ecosystems,SES
+ECO1,Climate patterns.,ECO
+ECO2,Pollution patterns.,ECO
+ECO3,Flows into and out of focal SES.,ECO

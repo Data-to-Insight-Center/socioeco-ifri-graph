@@ -1,0 +1,20 @@
+# This file contains some example cypher (Neo4j) queries that can be used
+# to explore the graph model
+
+# get all matched nodes
+match (n)-[r:`has child`*0..]->m
+where id(n) in [71415, 67229] and
+has(m.`sub-graph-match`)
+return m;
+
+# get matched sub-graphs
+match (n)-[r:`has child`*0..]->m
+where id(n) in [71415, 67229] and
+has(m.`sub-graph-match`) and
+m.`sub-graph-match` = 1
+return m;
+
+# get nodes in the same cluster
+MATCH (n:`Site`) WHERE n.cluster_result='cluster3' RETURN n;
+
+

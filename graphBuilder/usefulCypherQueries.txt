@@ -1,0 +1,34 @@
+# This file contains some example cypher (Neo4j) queries that can be used
+# to explore the graph model
+
+# find all site visits that have the given name
+match (n:Site {ONAME: "KISAMULA"})-[r:`has child`]->m
+return n, m;
+
+# show how a forest and its children look like
+MATCH (a:Forest {FNAME:'Wangeregeze'})-[:`has child`]->(b) RETURN a,b LIMIT 25
+
+# find where a certain species disappeared
+MATCH (n:`SpeciesDisappeared(5years)` {F_BIONAME: 'Maesopsis eminii'}) RETURN n LIMIT 25;
+
+# get all neighbors
+match (n)-[r]->m
+where id(n) = 71415
+return n, m;
+
+# get all distince properties
+MATCH (n) 
+WHERE has(n.`sub-graph-match`) 
+RETURN DISTINCT n.`sub-graph-match`;
+
+# get two-level descendants
+match (n)-[r:`has child`*0..2]->m
+where id(n) = 71415
+return m;
+
+# get a site visit graph
+match (n)-[r:`has child`*0..]->m
+where id(n) = 71415
+return m;
+
+
